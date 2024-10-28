@@ -70,7 +70,6 @@ ArrayList<Projectile> projectiles = new ArrayList<Projectile>();
    // player collision
    for (int i = 0; i < zombies.length; i++) {
       if ((px>=zombies[i].x-6 && px<=zombies[i].x+6) && (py>=zombies[i].y-6 && py<=zombies[i].y+6)) {
-        println("ow");
         fill(255, 100, 100);
         rect(px-8, py-8, 16, 16);
         zombies[i] = new Zombo();
